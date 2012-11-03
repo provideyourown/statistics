@@ -8,6 +8,14 @@ on data collected. This information can be useful for determining data
 quality as well as smoothing jittery readings such as those from touch
 sensors.
 
+In order to conserve precious SRAM when necessary, two versions of the
+library are available:
+
+IntStatistics.h - uses only integer math
+Statistics.h - uses floating point math
+
+The inclusion of floating point math in an Arduino sketch will consume
+over 200 bytes of SRAM in overhead.
 
 ## Methods
 
@@ -21,14 +29,20 @@ void setNewSampleSize(numSamples) - change the sample size (will reset any data 
 void reset() - reset the collected data
 
 **Adding data**
+
 void addData(val) - add a data point to the collection
 
 **Data Analysis**
-<type> mean() - the arthemetic mean of the data collected
-<type> variance() - the variance of the data
-<type> stdDeviation() - the standard deviation
-<type> maxVal() - the maximum data point
-<type> minVal() - the minimum data point
+
+[type] mean() - the arthemetic mean of the data collected
+
+[type] variance() - the variance of the data
+
+[type] stdDeviation() - the standard deviation
+
+[type] maxVal() - the maximum data point
+
+[type] minVal() - the minimum data point
 
 ## Usage example
 
