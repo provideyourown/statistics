@@ -1,6 +1,6 @@
-# Statistics Library (version: 1.0b)
+# Statistics Library (version: 1.0)
 
-> &copy; 2012-2012 Scott Daniels <provideyourown.com>
+> &copy; 2012-2013 Scott Daniels <provideyourown.com>
 > under GNU General Public License
 
 The Statistics Library permits you to easily perform statistical analysis 
@@ -38,13 +38,15 @@ void addData(val) - add a data point to the collection
 
 [type] variance() - the variance of the data
 
-[type] stdDeviation() - the standard deviation
+[type] stdDeviation() - the standard deviation (NOT available in the integer version)
 
 [type] maxVal() - the maximum data point
 
 [type] minVal() - the minimum data point
 
 ## Usage example
+
+    #include <Statistics.h>
 
     Statistics stats(10);
     
