@@ -91,7 +91,7 @@ class IntStatistics {
 
     long mean() const { return mTotal / mCurrNumSamples; }
     long variance() const { return (mRefVariance - (mCurrNumSamples * sqr(mean()))) / mCurrNumSamples; }
-    long stdDeviation() const { return sqrt(variance()); }
+//    long stdDeviation() const { return sqrt(variance()); }
     long maxVal() const { return mMax; }
     long minVal() const { return mMin; }
 

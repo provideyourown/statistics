@@ -49,8 +49,9 @@ turns out to be the true variance by virtue of associative principle.
 #define Statistics_h
 
 #include <float.h>
+#include <math.h>
 
-//#define sqr(x) ((x)*(x))
+#define sqr(x) ((x)*(x))
 
 class Statistics {
   public:
